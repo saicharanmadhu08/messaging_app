@@ -1,0 +1,159 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Mayra Whitfield",
+      "email": "mayrawhitfield@plasmox.com",
+      "password": "12345678",
+      "phone": "+1 (874) 531-3139",
+      "username": "mayrawhitfield123",
+      "location": "NJ"
+    },
+    {
+      "id": 2,
+      "name": "Wade Howell",
+      "email": "wadehowell@plasmox.com",
+      "password": "12345678",
+      "phone": "+1 (843) 580-3564",
+      "username": "wadehowell123",
+      "location": "NY"
+    },
+    {
+      "id": 3,
+      "name": "Jan Rowe",
+      "email": "janrowe@plasmox.com",
+      "password": "12345678",
+      "phone": "+1 (884) 581-3688",
+      "username": "janrowe123",
+      "location": "VA"
+    },
+    {
+      "id": 4,
+      "name": "Latoya Franco",
+      "email": "latoyafranco@plasmox.com",
+      "password": "12345678",
+      "phone": "+1 (888) 486-2281",
+      "username": "latoyafrance123",
+      "location": "MO"
+    },
+    {
+      "id": 5,
+      "name": "Cohen Forbes",
+      "email": "cohenforbes@plasmox.com",
+      "password": "12345678",
+      "phone": "+1 (832) 473-2201",
+      "username": "cohenforbes123",
+      "location": "KS"
+    }
+  ],
+  "credentials": [
+    {
+      "username": "mayrawhitfield123",
+      "password": "12345678"
+    },
+    {
+      "username": "wadehowell123",
+      "password": "12345678"
+    },
+    {
+      "username": "janrowe123",
+      "password": "12345678"
+    },
+    {
+      "username": "latoyafrance123",
+      "password": "12345678"
+    },
+    {
+      "username": "cohenforbes123",
+      "password": "12345678"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "from": "latoyafrance123",
+      "to": "Jan Rowe",
+      "subject": "hello",
+      "message": "this is test reply",
+      "important": true
+    },
+    {
+      "id": 2,
+      "from": "latoyafrance123",
+      "to": "Jan Rowe",
+      "subject": "hello",
+      "message": "this is test reply",
+      "important": false
+    },
+    {
+      "id": 4,
+      "from": "latoyafrance123",
+      "to": "Jan Rowe",
+      "subject": "hello",
+      "message": "this is test reply",
+      "important": false
+    },
+    {
+      "id": 5,
+      "from": "latoyafrance123",
+      "to": "Mayra Whitfield",
+      "subject": "hello",
+      "message": "this is test reply",
+      "important": false
+    },
+    {
+      "id": 6,
+      "from": "latoyafrance123",
+      "to": "Mayra Whitfield",
+      "subject": "subject 2",
+      "message": "test message 2",
+      "important": false
+    },
+    {
+      "id": 7,
+      "from": "latoyafrance123",
+      "to": "Latoya Franco",
+      "subject": "hello",
+      "message": "my name is Latoya France",
+      "important": true
+    },
+    {
+      "id": 9,
+      "from": "mayrawhitfield123",
+      "to": "Wade Howell",
+      "subject": "testing alert",
+      "message": "if alert is success it shows up...",
+      "important": false
+    },
+    {
+      "id": 10,
+      "from": "mayrawhitfield123",
+      "to": "Cohen Forbes",
+      "subject": "alert testing",
+      "message": "this is for testing alert again",
+      "important": true
+    },
+    {
+      "id": 11,
+      "from": "mayrawhitfield123",
+      "to": "Jan Rowe",
+      "subject": "final alert test",
+      "message": "this works good now",
+      "important": true
+    },
+    {
+      "id": "16:06:21 GMT-0500 (Eastern Standard Time)",
+      "from": "mayrawhitfield123",
+      "to": "Cohen Forbes",
+      "subject": "this test",
+      "message": "ksjfghskubhksfbfiusghsfiughrhg;hra"
+    },
+    {
+      "id": "06:27:08 GMT-0500 (Eastern Standard Time)",
+      "from": "mayrawhitfield123",
+      "to": "Wade Howell",
+      "subject": "fu",
+      "message": "kdjnekajfneknkew"
+    }
+  ]
+}

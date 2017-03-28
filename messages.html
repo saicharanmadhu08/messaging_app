@@ -1,0 +1,26 @@
+<div ng-controller="messageController as msgCtrl">
+    <br/><br/><br/><br/><br/>
+    <div class="row">
+        <div class="col-lg-4">
+            <div id="messagesGroup">
+                <ul class="list-group">
+                    <li class="list-group-item" ng-click="msgCtrl.composeNewMsg()">Compose </li>
+                    <li class="list-group-item" ng-click="msgCtrl.showInbox()">Inbox <span class="badge">{{}}</span></li>
+                    <li class="list-group-item" ng-click="msgCtrl.showOutbox()">Sent <span class="badge">{{}}</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4 ">
+            <new-message ng-if="msgCtrl.enableNewMessage"></new-message>
+            <inbox ng-if="msgCtrl.enableInbox"></inbox>
+            <outbox ng-if="msgCtrl.enableOutbox"></outbox>
+        </div>
+        <div class="col-lg-4">
+            <div id="listOfTo" ng-if="msgCtrl.findTo">
+                <ul class="list-group" ng-repeat="val in msgCtrl.toArray">
+                    <li id="eachUser" ng-click="msgCtrl.sendTo(val)"><a>{{val}}<a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

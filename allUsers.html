@@ -1,0 +1,16 @@
+<div ng-controller="allUsersController as allUsersCtrl">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="container" id="allUsersList">
+                <ul class="list-group" ng-repeat="obj in allUsersCtrl.allUsersList">
+                    <li id="eachUser" ng-click="allUsersCtrl.allUsersCtrl($index)" class="list-group-item"><a>{{obj.name}}<a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div ng-repeat="(key,val) in allUsersCtrl.eachUser">
+               <p> {{key}} : {{val}}</p>
+            </div>
+        </div>
+    </div>
+</div>

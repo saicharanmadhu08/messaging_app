@@ -1,0 +1,7 @@
+<div ng-controller="homeController as homeCtrl">
+    <div class="panel panel-default" id="loggerInfo">
+        <div class="panel-body" ng-repeat="(key  ,val ) in homeCtrl.presentUserDetails">
+            <b>{{key | uppercase}}:</b>&nbsp; <i>{{val}}</i><br />
+        </div>
+    </div>
+</div>

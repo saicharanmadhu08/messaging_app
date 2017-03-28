@@ -1,0 +1,11 @@
+<div id="inbox">
+    <div ng-repeat="eachMsg in msgCtrl.inboxArray">
+        <i ng-class="eachMsg.important? 'glyphicon glyphicon-star':'glyphicon glyphicon-star-empty' " ng-click="msgCtrl.changePriority(eachMsg)"
+            id="important">Important</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="glyphicon glyphicon-trash" id="delete" ng-click="msgCtrl.deleteMsg(eachMsg)">Delete</i><br /><br />
+            <b>From<b> : <i>{{eachMsg.from}}</i><br />
+        <b>Subject<b> : <i>{{eachMsg.subject}}</i><br />
+        <b>Message<b> : <i>{{eachMsg.message}}</i>
+    <hr>
+   </div>
+</div>

@@ -1,0 +1,22 @@
+<div id="loginForm" ng-controller="LoginController as loginCtrl">
+    <h1 class="hidden-xs">Login to enter</h1>
+    <h3 class="visible-xs">Login to enter</h3>
+    <div ng-if="loginCtrl.errorOccured" class="alert alert-danger">{{loginCtrl.errorMessage}}</div>
+    <form>
+        <div class="form-group">
+            <label for="Username">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Username" ng-keyup="loginCtrl.usernameManipulation()"
+                ng-model="loginCtrl.username">
+        </div>
+        <div ng-if="loginCtrl.usernameErrorOccured" class="alert alert-danger">{{loginCtrl.usernameErrorMessage}}</div>
+        <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="password" class="form-control" id="password" ng-model="loginCtrl.password" placeholder="Password" ng-keyup="loginCtrl.passwordManipulation()">
+
+        </div>
+        <div ng-if="loginCtrl.passwordErrorOccured" class="alert alert-danger">{{loginCtrl.passwordErrorMessage}}</div>
+        <button type="submit" class="btn btn-default" ng-click="loginCtrl.onSubmit()">Submit</button>
+    </form>
+</div>
+<div>
+    <div>

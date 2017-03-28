@@ -1,0 +1,22 @@
+<div ng-controller="navBarController as navCtrl">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="#/home/{{navCtrl.presentUser}}">Home</a></li>
+                <li><a href="#/messages">Messages</a></li>
+                <li><a href="#/allUsers">All Users</a></li>
+                <li ng-click="navCtrl.logout()"><a href="#/">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="greeter" class="panel panel-default" ng-if="navCtrl.close">
+        <div class="panel-body">
+            <h1 class="hidden-xs">WELCOME TO MESSAGING APPLICATION</h1>
+            <h4 class="visible-xs">WELCOME TO MESSAGING APPLICATION</h4>
+            <span class="glyphicon glyphicon-remove" id="remove" ng-click="navCtrl.remove()"></span>
+            <br /><br /><br /><br /><br /><br /><br />
+            <h4>You signed in as "{{navCtrl.username}}"</h4>
+        </div>
+    </div>
+    <div ng-view=""></div>
+</div>

@@ -1,0 +1,28 @@
+<html ng-app="myApp">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Angular JS</title>
+    <script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="app.config.js"></script>
+    <script src="login.controller.js"></script>
+    <script src="login.directive.js"></script>
+    <script src="login.service.js"></script>
+    <script src="navBar.directive.js"></script>
+    <script src="navbar.controller.js"></script>
+    <script src="home.controller.js"></script>
+    <script src="home.service.js"></script>
+    <script src="allUsers.controller.js"></script>
+    <script src="messages.controller.js"></script>
+</head>
+<body ng-controller="mainController as ctrl">
+    <h1>Messenger App</h1>
+    <login-page ng-if="status" ></login-page>
+    <navigation-bar ng-if="!status"></navigation-bar>
+</body>
+</html>
